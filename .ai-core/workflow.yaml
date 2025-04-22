@@ -1,0 +1,8 @@
+version: 1.0
+
+pipeline:
+  id: train-demand-model
+  name: Train Demand Model
+  docker:
+    image: <your-docker-registry>/ai-core-demand:latest
+    command: ["python", "train.py"]
